@@ -1,0 +1,627 @@
+.featured-products {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.carousel-content {
+  text-align: center;
+}
+
+.featured-image {
+  max-width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-title {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.carousel-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.carousel-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background: #666;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-image {
+    height: 300px;
+  }
+  
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background:url('background.jpeg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  background-position: center;
+}
+
+.dashboard-header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e2e8f0;
+}
+
+.dashboard-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #93c5fd;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f87171;
+}
+
+.dashboard-main {
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.dashboard-main h3 {
+  font-size: 22px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.dashboard-data {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.chart-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.table-container {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.data-table th, .data-table td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #e2e8f0;
+  font-weight: 600;
+  color: #374151;
+}
+
+.data-table td {
+  color: #374151;
+}
+
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+
+
+/* Slide-in Header Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-in Table Rows */
+@keyframes fadeInRows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer Fade-in */
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Apply slide-in animation to the header */
+.dashboard-header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 1s ease-out;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e2e8f0;
+}
+
+.dashboard-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #93c5fd;
+  transform: scale(1.1); /* Grow effect */
+}
+
+/* Apply fade-in animation to table rows */
+.data-table tbody tr {
+  opacity: 0;
+  animation: fadeInRows 1s forwards;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.data-table tbody tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f87171;
+  transform: scale(1.05); /* Button grow effect */
+}
+
+/* Apply fade-in animation to footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeInFooter 1s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+
+/* Continuous Rotation Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Apply slide-in animation to the header */
+.dashboard-header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 1s ease-out;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e2e8f0;
+}
+
+.dashboard-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #93c5fd;
+  transform: scale(1.1); /* Grow effect */
+}
+
+/* Apply fade-in animation to table rows */
+.data-table tbody tr {
+  opacity: 0;
+  animation: fadeInRows 1s forwards;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.data-table tbody tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f87171;
+  transform: scale(1.05); /* Button grow effect */
+}
+
+/* Apply fade-in animation to footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeInFooter 1s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Image styling */
+/* Image styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px; /* Space between table/graph and images */
+}
+
+.dashboard-image {
+  width: 80px; /* Small size for images */
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fits within the small box */
+  animation: rotate 5s linear infinite; /* Continuous rotation */
+}
+
+/* Animation for rotating the images */
+/* Common Style for All Images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-image, .dashboard-image1, .dashboard-image2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  animation: swapImages 10s ease-in-out infinite; /* Infinite swap */
+}
+
+/* Infinite Image Swap Animation */
+@keyframes swapImages {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(200px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-200px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+
+/* Common Style for All Images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-image, .dashboard-image1, .dashboard-image2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  animation: swapImages 10s ease-in-out infinite; /* Infinite swap */
+}
+
+/* Infinite Image Swap Animation */
+@keyframes swapImages {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(200px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-200px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}

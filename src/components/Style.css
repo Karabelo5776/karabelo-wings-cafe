@@ -1,0 +1,365 @@
+/* Style.css */
+
+/* Container styles */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styles */
+  #auth-title {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  #auth-form {
+    width: 100%;
+  }
+  
+  /* Input styles */
+  .auth-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Focus effect on input */
+  .auth-input:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  /* Button styles */
+  .auth-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for button */
+  .auth-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: red;
+  }
+  
+  /* Toggle paragraph styles */
+  .toggle-auth {
+    margin-top: 15px;
+  }
+  
+  /* Toggle button styles */
+  .toggle-button {
+    background-color: transparent; /* Transparent button for toggle */
+    color: #007bff; /* Link color */
+    border: none; 
+  }
+  
+  /* Underline effect on hover for toggle button */
+  .toggle-button:hover {
+      text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Animation for form elements */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  .auth-container,
+  #auth-title,
+  #auth-form,
+  .auth-input,
+  .auth-button,
+  .toggle-auth,
+  .toggle-button {
+      animation: fadeIn ease-in-out .5s; /* Apply fade-in animation */
+  }
+
+
+
+
+
+
+
+
+#myuser{
+    color: white;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styles */
+.navigation {
+   
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li {
+    margin-right: 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button.danger {
+    background-color: #f44336;
+}
+
+button.danger:hover {
+    background-color: #d32f2f;
+}
+
+/* Header Styling */
+header {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.product-management, .user-management {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-form, .user-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-form input, .user-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.product-form input:focus, .user-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-table th, .user-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.product-table tr:hover, .user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Error Message */
+.error {
+    color: #e74c3c;
+    margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .product-management, .user-management {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .product-form input,
+    .user-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Dark background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff; /* White color for brand */
+    font-size: 24px; /* Larger font for brand */
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+    padding: 8px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded edges */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover for effect */
+}
+
+.logout-button {
+    background-color: #dc3545; /* Red color for logout */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack the links */
+        gap: 10px; /* Space between links */
+        margin-top: 10px; /* Margin above links */
+    }
+}
